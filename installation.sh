@@ -10,22 +10,20 @@ else
     echo "You are super user"
 fi
 
-dnf install mysql -y
+validation(){
+    if [ $1 -ne 0 ]
+    then 
+        echo "Installation of $2 is failure"
+        exit 1
+    else
+        echo "Installation of $2 is success"
+    fi
+}
 
-if [ $? -ne 0 ]
-then 
-    echo "Installation of mysql is failure"
-    exit 1
-else
-    echo "Installation of mysql is success"
-fi
+dnf install mysql -y
+validation $? "mysql"
+
 
 dnf install git -y
+validation $? "git"
 
-if [ $? -eq 0 ]
-then 
-    echo "Installation of git is success"
-else 
-    echo "Installation of git is failure"
-    exit 1
-fi
