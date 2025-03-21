@@ -20,10 +20,10 @@ validation(){
     fi
 }
 
-dnf install mysqll -y
+dnf install mysql -y
 validation $? "mysql"
 
 
-dnf install git -y
+dnf install gitl -y
 validation $? "git"
 
