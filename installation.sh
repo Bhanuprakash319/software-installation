@@ -24,6 +24,6 @@ dnf install mysql -y
 validation $? "mysql"
 
 
-dnf install gitl -y
+dnf install git -y
 validation $? "git"
 
