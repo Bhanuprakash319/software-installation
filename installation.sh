@@ -10,11 +10,11 @@ else
     echo "You are super user"
 fi
 
-dnf install mysql -y
+dnf install mysqll -y
 
 if [ $? -ne 0 ]
 then 
-    echo "Installation of mysqll is failure"
+    echo "Installation of mysql is failure"
     exit 1
 else
     echo "Installation of mysql is success"
