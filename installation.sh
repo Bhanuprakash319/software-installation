@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
+echo "$USERID"
 
 if [$USERID -ne 0]
 then
@@ -10,4 +11,3 @@ else
     echo "You are super user"
 fi
 
-echo "$USERID"
