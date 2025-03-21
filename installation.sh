@@ -20,7 +20,7 @@ validation(){
     fi
 }
 
-dnf install mysql -y
+dnf install mysqll -y
 validation $? "mysql"
 
 
