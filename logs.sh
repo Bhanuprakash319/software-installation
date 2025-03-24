@@ -1,6 +1,9 @@
 #!/bin/bash
 
 userid=$(id -u)
+time=$(date +%F-%H-%M-%S)
+
+echo "$time"
 
 
 if [ $userid -eq 0 ]
