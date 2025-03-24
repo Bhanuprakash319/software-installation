@@ -1,1 +1,1 @@
-This is used to install the mysql and other software using shell script
+This was used to install the mysql and other software using shell script 
