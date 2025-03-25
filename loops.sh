@@ -8,9 +8,9 @@ n="\e[0m"
 
 if [ $userid -eq 0 ]
 then
-    echo "$g You are super user $n"
+    echo -e "$g You are super user $n"
 else
-    echo "$r You are not super user $n"
+    echo -e "$r You are not super user $n"
     exit 1
 fi
 
