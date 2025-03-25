@@ -25,7 +25,8 @@ dnf install nginx -y
 validate $? "installing nginx"
 
 systemctl enable nginx
-validate $? "installing nginx"
+validate $? "enabling nginx"
 
 systemctl start nginx
 validate $? "starting nginx"
+
