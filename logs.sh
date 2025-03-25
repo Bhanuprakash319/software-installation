@@ -24,11 +24,11 @@ fi
 validation(){
     if [ $1 -ne 0 ]
     then 
-        echo -e "Installation of $2 is $rfailure"
+        echo -e "Installation of $2 is $r failure"
         echo "hi"
         exit 1
     else
-        echo -e "Installation of $2 is $gsuccess"
+        echo -e "Installation of $2 is $g success"
         echo "hi"
     fi
 }
