@@ -7,6 +7,7 @@ logfile=/tmp/$time-$filename.log
 
 r="\e[31m"
 g="\e[32m"
+y="\e[33m"
 n="\e[0m"
 
 if [ $userid -eq 0 ]
@@ -27,14 +28,18 @@ validate(){
     fi
 }
 
-dnf install mysql -y &>>$logfile
-validate $? "mysql"
-
-
-#for i in {1..20}
-#do 
-#   echo "$i"
-#done'
+for i in $@
+do
+   echo "package to install $i"
+   dnf list installed $i &>>$logfile
+   if [ $? -eq 0 ]
+   then 
+        echo -e "$i is already installed, so $y skipping $n"
+   else
+        dnf install $i -y &>>$logfile
+        validate $? $i
+    fi
+done
 
 
 
