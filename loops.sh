@@ -27,7 +27,7 @@ validate(){
     fi
 }
 
-dnf install mysql -y &>>$logfile
+dnf install mysqll -y &>>$logfile
 validate $? "mysql"
 
 
