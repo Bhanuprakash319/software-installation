@@ -17,6 +17,7 @@ validate()
     else
          echo "$2 is failure"
          exit 1 
+    fi
 }
 
 
