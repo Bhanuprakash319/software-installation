@@ -31,10 +31,10 @@ dnf install mysql -y &>>$logfile
 validate $? "mysql"
 
 
-'for i in {1..20}
-do 
-   echo "$i"
-done'
+#for i in {1..20}
+#do 
+#   echo "$i"
+#done'
 
 
 
