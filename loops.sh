@@ -24,6 +24,7 @@ validate(){
         exit 1
     else
          echo -e "installation of $2 is $g success $n"
+    fi
 }
 
 dnf install mysql -y &>>$logfile
