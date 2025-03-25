@@ -24,7 +24,7 @@ validation(){
         echo -e "\e[31m Installation of $2 is failure"
         exit 1
     else
-        echo -e "\e[32m Installation of $2 is success"
+        echo -e "\e[32m Installation \e[0m of $2 is success"
     fi
 }
 
