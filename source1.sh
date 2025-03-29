@@ -3,7 +3,7 @@
 
 r="\e[31m"
 g="\e[32m"
-n="\e[om"
+n="\e[0m"
 
 a="bhanu"
 echo -e "Process id of source1 is$g $$$n"
